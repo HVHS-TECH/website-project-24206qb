@@ -57,10 +57,9 @@ body {
   background-size: cover;
 }
 
-.carousel-cell a:hover{ 
-  background-color: #111111; 
+.carousel-cell:hover img {
+  filter: brightness(0.3);
 }
-
 
 img{
   border-radius: 5px;
