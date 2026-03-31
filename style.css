@@ -56,9 +56,11 @@ body {
   background-position: center center;
   background-size: cover;
 }
-.carousel-cell a:hover img{
-    background-color: #f50101;
+
+.carousel-cell a:hover{ 
+  background-color: #111111; 
 }
+
 
 img{
   border-radius: 5px;
