@@ -63,6 +63,29 @@ body {
   transition: transform 0.5s ease;
 }
 
+.carousel-cell .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transition: background-color 0.5s ease;
+}
+
+.carousel-cell .overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: antiquewhite;
+  font-size: 3em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-shadow: 2px 2px 8px black;
+  
+}
 
 .carousel-cell:hover img {
   filter: brightness(0.5);
