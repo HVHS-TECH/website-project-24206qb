@@ -84,11 +84,19 @@ body {
   opacity: 0;
   transition: opacity 0.5s ease;
   text-shadow: 2px 2px 8px black;
-  
+  font-family: 'Cursive', sans-serif;
 }
 
 .carousel-cell:hover img {
-  filter: brightness(0.5);
+  transform: scale(1.1);
+}
+
+.carousel-cell:hover .overlay {
+  background-color: black;
+}
+
+.carousel-cell:hover .overlay-text {
+  opacity: 1;
 }
 
 img{
