@@ -58,7 +58,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0);
 }
 
-.carousel-cell img {
+.carousel-cell img{
   object-fit: cover;
   transition: transform 0.5s ease;
 }
