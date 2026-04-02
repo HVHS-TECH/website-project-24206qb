@@ -93,7 +93,7 @@ body {
 }
 
 .carousel-cell:hover .overlay {
-  background-color: rgb(146, 115, 115);
+  background-color: rgb(146, 115, 115, 0.4);
 }
 
 .carousel-cell:hover .overlay-text {
