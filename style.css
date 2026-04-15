@@ -7,10 +7,11 @@ body {
 }
 .container {
   display: grid;
-  height: 945px;
-  grid-template-rows: 72px 80px 675px auto;
-  grid-template-columns: auto 1200px auto;
+  min-height: 100vh;
+  grid-template-rows: 72px 80px auto auto;
+  grid-template-columns: 1fr min(1200px, 100%) 1fr;
 }
+
 .container div {
   font-size: 30px;
   text-align: center;
