@@ -9,7 +9,15 @@
 
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+  
+    <script>
+    window.addEventListener('load', function() {
+      var flkty = Flickity.data('.carousel');
+      flkty.on('settle', function() {
+        flkty.resize();
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -27,7 +35,7 @@
 
   <div class="carousel-wrapper">
   <div class="carousel" 
-  data-flickity='{ "pageDots": false, "wrapAround": false, "autoPlay": 0 }'>
+  data-flickity='{ "pageDots": false, "wrapAround": true, "autoPlay": 0 }'>
    <div class="carousel-cell">
   <img src="images/T-rex.png" alt="HTML5 Icon">
    <div class="overlay"></div>
