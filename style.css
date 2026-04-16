@@ -8,7 +8,7 @@ body {
 .container {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 72px 80px auto auto;
+  grid-template-rows: 72px 80px 60vh auto;
   grid-template-columns: 1fr min(1200px, 100%) 1fr;
 }
 
@@ -50,19 +50,18 @@ body {
 .carousel {
   background-color: rgb(255, 255, 255);
   grid-column: 1 / -1;
-  height: 50vh;
-  max-height: 675px;
+  height: 60vh;
   overflow: hidden;
-  position: relative; 
-  box-sizing: border-box;
+  position: relative;
 }
 
 .flickity-viewport {
   overflow: hidden;
 }
 
-.carousel .flickity-viewport {
-  width: 100%;
+.flickity-viewport {
+  height: 60vh !important;
+  overflow: hidden;
 }
 
 .carousel-cell {
@@ -70,16 +69,17 @@ body {
   overflow: hidden;
   margin-right: 10px;
   border-radius: 5px;
-  background-position: center center;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   width: 70%;
-  height: 100%;
+  height: 60vh;
   position: relative;
 }
 
 @media (max-width: 768px) {
   .carousel-cell {
     width: 100%;
+    height: 60vh;
+
   }
 }
 
