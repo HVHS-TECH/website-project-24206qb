@@ -8,7 +8,7 @@ body {
 .container {
   display: grid;
   min-height: 100vh;
-  grid-template-rows: 72px 80px 60vh auto;
+  grid-template-rows: 72px 80px 80vh auto;
   grid-template-columns: 1fr min(1200px, 100%) 1fr;
 }
 
@@ -50,7 +50,7 @@ body {
 .carousel {
   background-color: rgb(255, 255, 255);
   grid-column: 1 / -1;
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
   position: relative;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .flickity-viewport {
-  height: 60vh !important;
+  height: 80vh !important;
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   width: 70%;
-  height: 60vh;
+  height: 80vh;
   position: relative;
 }
 
