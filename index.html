@@ -7,21 +7,11 @@
   <title>My cool page</title>
   <link href="style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 
 <body>
-
-    <script>
-    window.addEventListener('load', function() {
-      var flkty = Flickity.data('.carousel');
-      flkty.on('settle', function() {
-        flkty.resize();
-      });
-    });
-  </script>
 
 <div class="container">
   <div class="nav">
@@ -35,54 +25,80 @@
   <div class="item2">header</div>
 
   <div class="carousel-wrapper">
-  <div class="carousel" 
-  data-flickity='{ "pageDots": false, "wrapAround": true, "autoPlay": 0 }'>
-   <div class="carousel-cell">
-  <img src="images/T-rex.png" alt="HTML5 Icon">
-   <div class="overlay"></div>
-   <div class="overlay-text"> Your text here</div>
-  </div>
-  
-   <div class="carousel-cell">
-     <img src="images/Pterodactyl.png" alt="Pterodactyl">
-     <div class="overlay"></div>
-     <div class="overlay-text">Pterodactyl</div>
-   </div>
-   
-   <div class="carousel-cell">
-     <img src="images/Anklosaurus.png" alt="Ankilosaurus">
-     <div class="overlay"></div>
-     <div class="overlay-text">Ankilosaurus</div>
-   </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
 
-   <div class="carousel-cell">
-     <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98bd3ae7-1024x574.jpeg" alt="Water Image 1">
-     <div class="overlay"></div>
-     <div class="overlay-text">Your text here</div>
-   </div>
-   
-   <div class="carousel-cell">
-     <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98bd3ae7-1024x574.jpeg" alt="Water Image 2">
-     <div class="overlay"></div>
-     <div class="overlay-text">Your text here</div>
-   </div>
-   
-   <div class="carousel-cell">
-     <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98bd3ae7-1024x574.jpeg" alt="Water Image 3">
-     <div class="overlay"></div>
-     <div class="overlay-text">Your text here</div>
-   </div>
+        <div class="swiper-slide">
+          <img src="images/T-rexs.png" alt="T-rex">
+          <div class="overlay"></div>
+          <div class="overlay-text">Your text here</div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/Pterodactyls.png" alt="Pterodactyl">
+          <div class="overlay"></div>
+          <div class="overlay-text">Pterodactyl</div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="images/Anklosaurus.png" alt="Ankilosaurus">
+          <div class="overlay"></div>
+          <div class="overlay-text">Ankilosaurus</div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98bd3ae7-1024x574.jpeg" alt="Water Image 1">
+          <div class="overlay"></div>
+          <div class="overlay-text">Your text here</div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98dd3ae7-1024x574.jpeg" alt="Water Image 2">
+          <div class="overlay"></div>
+          <div class="overlay-text">Your text here</div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="https://www.newport-water.com/wp-content/uploads/2025/09/20250919-232000-1620d60da110a840-9a7e108c-c05a-41c6-88d5-697a98bd3ae7-1024x574.jpeg" alt="Water Image 3">
+          <div class="overlay"></div>
+          <div class="overlay-text">Your text here</div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div>
+
+  <div class="footer">click for more information</div>
+
 </div>
 
-  <div class="footer"> click for more information</div>
 
-</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    slidesPerView: 1.4,
+    centeredSlides: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        centeredSlides: false,
+      },
+      768: {
+        slidesPerView: 1.4,
+        centeredSlides: true,
+      }
+    }
+  });
+</script>
 
 </body>
-
-
-
 </html>
-
-
