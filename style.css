@@ -56,12 +56,12 @@ body {
 }
 
 .flickity-viewport {
+  height: 80vh ;
   overflow: hidden;
 }
 
-.flickity-viewport {
-  height: 80vh !important;
-  overflow: hidden;
+.flickity-slider {
+  height: 80vh;
 }
 
 .carousel-cell {
@@ -78,8 +78,7 @@ body {
 @media (max-width: 768px) {
   .carousel-cell {
     width: 100%;
-    height: 60vh;
-
+    height: 80vh;
   }
 }
 
