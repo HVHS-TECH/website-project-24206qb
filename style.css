@@ -26,6 +26,9 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #333333;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .nav li a {
@@ -40,7 +43,7 @@ body {
   background-color: #111111;
 }
 .nav li {
-  float: right;
+  float: none;
 }
 
 
