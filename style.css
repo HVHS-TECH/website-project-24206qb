@@ -48,14 +48,10 @@ body {
 
 
 .carousel {
-.carousel {
-  background-color: rgb(255, 255, 255);
+  background-color:rgb(255, 255, 255);
   grid-column: 1 / 5;
-  height: 50vh;
+  height: 70vh;
   max-height: 675px;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 
 .carousel-cell {
