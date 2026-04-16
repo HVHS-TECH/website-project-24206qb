@@ -52,9 +52,13 @@ body {
   grid-column: 1 / -1;
   height: 50vh;
   max-height: 675px;
-  width: 100%; 
   overflow: hidden;
+  position: relative; 
   box-sizing: border-box;
+}
+
+.flickity-viewport {
+  overflow: hidden;
 }
 
 .carousel .flickity-viewport {
