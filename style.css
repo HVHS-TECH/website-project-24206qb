@@ -50,14 +50,19 @@ body {
 }
 
 .carousel-cell {
-  width: 66%;
-  height: 675px;
+  width: 80%;
   background: rgb(241, 206, 206);
   overflow: hidden;
   margin-right: 10px;
   border-radius: 5px;
   background-position: center center;
   box-shadow: 0 8px 16px rgba(255, 255, 255,);
+}
+
+@media (max-width: 768px) {
+  .carousel-cell {
+    width: 100%;
+  }
 }
 
 .carousel-cell img{
