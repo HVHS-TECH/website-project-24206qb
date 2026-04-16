@@ -3,6 +3,7 @@ body {
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     margin: 0px;
+    align-items: center;
 }
 .container {
   display: grid;
@@ -130,10 +131,4 @@ img{
 }
 .item11 {
   grid-column: 2 / 4;
-}
-.item12 {
-  grid-column: 2 / 3;
-}
-.item13 {
-  grid-column: 3 / 4;
 }
