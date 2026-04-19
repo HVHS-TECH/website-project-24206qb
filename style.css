@@ -86,9 +86,9 @@ body {
 
 .item2 {
   grid-column: 1 / -1;
-  padding: 50px 10px;
+  padding: 0px 10px;
   font-family: 'HistoyStaco', serif;
-  font-size: 70px;
+  color: rgb(0, 0, 0);
 }
 
 .carousel-wrapper {
