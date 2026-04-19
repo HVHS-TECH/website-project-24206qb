@@ -1,5 +1,22 @@
+
+@font-face {
+  font-family: 'HistoyStaco';
+  src: url('./fonts/histoy-staco.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Dinofiles';
+  src: url('./fonts/Dinofiles.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Dinotoons';
+  src: url('./fonts/Dinotoons.ttf') format('truetype');
+}
+
+
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: #e2efde;
   overflow-x: hidden;
   margin: 0px;
 }
@@ -18,31 +35,51 @@ body {
 
 .nav {
   grid-column: 1 / -1;
+  background-color: #a18276;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav-logo {
+  font-family: 'HistoyStaco', serif;
+  font-size: 1.6em;
+  color: #fff8f0;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .nav ul {
-  list-style-type: none;
+  list-style-type: none; 
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
   display: flex;
-  justify-content: flex-end;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav li a {
   display: block;
-  color: white;
+  color: #fff8f0;
   text-align: center;
-  padding: 29px 30px;
+  padding: 0px 20px;
   text-decoration: none;
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
-.nav a:hover {
-  background-color: #111111;
+.nav li a:hover {
+  color: #f5e6d0;
+  border-bottom: 3px solid rgb(38, 97, 24);
+  background-color: transparent;
 }
-
 .nav li {
   float: none;
 }
@@ -50,12 +87,15 @@ body {
 .item2 {
   grid-column: 1 / -1;
   padding: 50px 10px;
+  font-family: 'HistoyStaco', serif;
+  font-size: 70px;
 }
 
 .carousel-wrapper {
   grid-column: 1 / -1;
   height: 80vh;
   overflow: hidden;
+
   position: relative;
 }
 
