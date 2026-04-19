@@ -172,7 +172,7 @@ body {
 .footer .explore {
   font-size: 1.3em;
   font-weight: 400;
-  max-width: 1800px;
+  max-width: 2200px;
   line-height: 1.6;
   margin: 0;
   text-align: center;
@@ -180,4 +180,5 @@ body {
   padding-bottom: 20px;
   letter-spacing: 1px;
   font-family: 'HistoyStaco', serif;
+  font-size: 45px;
 }
